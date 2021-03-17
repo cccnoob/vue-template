@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'dinbold';
+    src: url('../font/din-bold_1.woff2') format('woff2'),
+        url('../font/din-bold_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dinlight';
+    src: url('../font/din-light_1.woff2') format('woff2'),
+        url('../font/din-light_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.dinlight {
+    font-family: 'dinlight';
+}
+
+.dinbold {
+    font-family: 'dinbold';
+}
+.light-style{
+    width:36px;
+    height:36px;
+}
+.normal-style{
+    width:36px;
+    height:36px;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap ;
+    overflow: hidden ;
+}
+
+.main-wrap {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    color: #9AB1FF;
+    font-family: PingFang SC, "微软雅黑";
+    user-select: none;
+    animation: mainFadeIn 2s;
+}
+
+@keyframes mainFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mouseevent:hover {
+    opacity: .88;
+}
+
+.mouseevent:active {
+    opacity: .75;
+}
+
+.swiper-scrollbar-drag {
+    background: #7DE9FF;
+}
+
+.scroll-number {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.16;
+
+    .scroll-number-item {
+        display: inline-block;
+        vertical-align: middle;
+        background: rgba(71, 94, 170, .5);
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        margin: 0 2px;
+        border-radius: 3px;
+        color: #7DE9FF;
+    }
+
+    .digit {
+        vertical-align: middle !important;
+    }
+}
+
+.panel-cont-title{
+    height:422px;
+}
+
+.areaselect {
+    .el-select {
+        margin-right: 10px;
+
+        &:hover .el-input__inner {
+            border-color: #2c2f71;
+        }
+    }
+
+    .el-input__inner {
+        background: rgba(17, 0, 58, 0.3);
+        border-color: #475EAA;
+        color: #9AB1FF;
+        height: 30px;
+        line-height: 30px;
+        width: 150px;
+
+        &:focus {
+            border-color: #2c2f71;
+            background: #2c2f71;
+        }
+    }
+
+    .el-input {
+        &.is-focus {
+            .el-input__inner {
+                border-color: #2c2f71;
+                background: #2c2f71;
+            }
+        }
+    }
+
+    .el-input__icon {
+        line-height: 30px;
+    }
+
+    .el-select .el-input .el-select__caret {
+        color: #9AB1FF;
+    }
+}
